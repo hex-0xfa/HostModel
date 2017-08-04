@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"hostmodel\stm32f1xx_hal_cortex.o"
+"hostmodel\stm32f1xx_hal_rcc.o"
+"hostmodel\stm32f1xx_hal_dma.o"
+"hostmodel\stm32f1xx_hal_tim.o"
+"hostmodel\stm32f1xx_hal_rcc_ex.o"
+"hostmodel\stm32f1xx_hal_gpio_ex.o"
+"hostmodel\stm32f1xx_hal_uart.o"
+"hostmodel\stm32f1xx_hal_gpio.o"
+"hostmodel\stm32f1xx_hal_pwr.o"
+"hostmodel\stm32f1xx_hal_flash_ex.o"
+"hostmodel\stm32f1xx_hal_i2c.o"
+"hostmodel\stm32f1xx_hal.o"
+"hostmodel\stm32f1xx_hal_flash.o"
+"hostmodel\stm32f1xx_hal_tim_ex.o"
+"hostmodel\system_stm32f1xx.o"
+"hostmodel\startup_stm32f103xb.o"
+"hostmodel\stm32f1xx_hal_msp.o"
+"hostmodel\stm32f1xx_it.o"
+"hostmodel\main.o"
+--library_type=microlib --strict --scatter "HostModel\HostModel.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HostModel.map" -o HostModel\HostModel.axf
